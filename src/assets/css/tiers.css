@@ -1,0 +1,68 @@
+/* Champion Star level Styles */
+.tier1 {
+  color: #804a00;
+}
+.tier2 {
+  color: #6c7a86;
+}
+.tier3 {
+  color: #d4af37;
+}
+
+/* Trait level Styles */
+.traitTier0 {
+  background-color: #5F7F7F;
+}
+.traitTier1 {
+  background-color: #c06a00;
+}
+.traitTier2 {
+  background-color: #9caab6;
+}
+.traitTier3 {
+  background-color: #d4af37;
+}
+.traitTier4 {
+  background-color: #cba9c5;
+  background-image: linear-gradient(315deg, #ca99c1 0%, #9fc7af 74%);  
+}
+
+/* Champion rarity styles*/
+.rarity0 {
+  border: 1px solid;
+  border-color: gray;
+}
+.rarity1 {
+  border: 1px solid;
+  border-color: green;
+}
+.rarity2 {
+  border: 1px solid;
+  border-color: blue;
+}
+.rarity3 {
+  border: 1px solid;
+  border-color: purple;
+}
+.rarity4 {
+  border: 1px solid;
+  border-color: gold;
+}
+.rarity5 {
+  border: 1px solid;
+  border-color: pink;
+}
+
+/* Game placement Styles*/
+.placement1 {
+  background-color: #ffe0ac;
+}
+.placement2 {
+  background-color: #dadada;
+}
+.placement3 {
+  background-color: #b39384;
+}
+.placement4 {
+  background-color: #add8e6;
+}
