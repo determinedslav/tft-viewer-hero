@@ -105,7 +105,7 @@ const Match = () => {
                                                     match.traits.map((traits, i) => {
                                                         if (traits.style > 0) {
                                                             return <span key={i} className="ml-2">
-                                                                <img className={"rounded-lg p-1 traitTier" + traits.style}  height="25" width="25" src= {"images/traits/" + traits.name + ".png"} alt={traits.name}/>{traits.num_units}
+                                                                <img className={"rounded-lg p-1 traitTier" + traits.style}  height="25" width="25" src= {"images/traits/" + traits.name + ".svg"} alt={traits.name}/>{traits.num_units}
                                                             </span>
                                                         }
                                                     })}
