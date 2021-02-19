@@ -37,7 +37,7 @@ const PlayerCard = props=> {
                     lvl&nbsp;{props.level}
                 </div>
                 <div>
-                    <img className="img-fluid float-center w-50 m-3" src= {"images/emblems/" + props.rank + ".PNG"} alt="Ranked Emblem"/>
+                    <img className="img-fluid float-center w-50 m-3" src= {"images/emblems/" + props.rank + ".png"} alt="Ranked Emblem"/>
                 </div>
                 <div className="font-weight-bold">
                     {props.rank}&nbsp;{props.division}&nbsp;{props.lp}LP
