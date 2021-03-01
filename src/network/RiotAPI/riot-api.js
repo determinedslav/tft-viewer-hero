@@ -5,7 +5,7 @@ async function getPlayer(name, region, regionFull){
     try{
         let newPlayer;
         let newStats;
-        const requestNameURL = API.protocol + region + API.apiURL + API.nameByName + name + API.key + API.keyValue;
+        const requestNameURL = "https://tft-cors-proxy.herokuapp.com/" + API.protocol + region + API.apiURL + API.nameByName + name + API.key + API.keyValue;
         const responseName = await Remote.get(requestNameURL);
         if(responseName && responseName.hasOwnProperty('data')){
             newPlayer = {
@@ -15,7 +15,7 @@ async function getPlayer(name, region, regionFull){
                 id: responseName.data.id,
                 puuid: responseName.data.puuid,
             }
-            const requestStatsURL = API.protocol + region + API.apiURL + API.statsBySummonerId + responseName.data.id + API.key + API.keyValue;
+            const requestStatsURL = "https://tft-cors-proxy.herokuapp.com/" + API.protocol + region + API.apiURL + API.statsBySummonerId + responseName.data.id + API.key + API.keyValue;
             const responseStats = await Remote.get(requestStatsURL);
             if(responseStats && responseStats.hasOwnProperty('data')){
                 if (responseStats.data.length === 0) {
@@ -44,12 +44,12 @@ async function getPlayer(name, region, regionFull){
 async function getMatches(player) {
     try{
         let matches = [];
-        const requestHistoryURL = API.protocol + API.europe + API.apiURL + API.matchesByPuuid + player.puuid + API.matchesParams + API.keyValue;
+        const requestHistoryURL = "https://tft-cors-proxy.herokuapp.com/" + API.protocol + API.europe + API.apiURL + API.matchesByPuuid + player.puuid + API.matchesParams + API.keyValue;
         const responseHistory = await Remote.get(requestHistoryURL);
         if(responseHistory && responseHistory.hasOwnProperty('data')){
             //For each found match id call the getMatchByMatchId API
             responseHistory.data.map(async item=> {
-                const requestMatchURL = API.protocol + API.europe + API.apiURL + API.matchByMatchId + item + API.key + API.keyValue;
+                const requestMatchURL = "https://tft-cors-proxy.herokuapp.com/" + API.protocol + API.europe + API.apiURL + API.matchByMatchId + item + API.key + API.keyValue;
                 const responseMatch = await Remote.get(requestMatchURL);
                 if(responseMatch && responseMatch.hasOwnProperty('data')){
                     // eslint-disable-next-line
