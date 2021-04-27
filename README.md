@@ -1,3 +1,5 @@
+A react.js web application for visualising data from the Riot Games Teamfight Tactics APIs
+
 Deployed at: https://tft-viewer.herokuapp.com/
 
 ### How to use:
