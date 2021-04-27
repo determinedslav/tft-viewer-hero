@@ -12,4 +12,4 @@ Deployed at: https://tft-viewer.herokuapp.com/
 
 ### Notes:
 
-It might take Heroku a couple of minutes to wake up the app
+It might take Heroku a couple of minutes to wake up the app (Page showing Server not Found or Aplication Error)
