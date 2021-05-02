@@ -29,27 +29,27 @@
 
 /* Champion rarity styles*/
 .rarity0 {
-  border: 1px solid;
+  border: 2px solid;
   border-color: gray;
 }
 .rarity1 {
-  border: 1px solid;
+  border: 2px solid;
   border-color: green;
 }
 .rarity2 {
-  border: 1px solid;
+  border: 2px solid;
   border-color: blue;
 }
 .rarity3 {
-  border: 1px solid;
+  border: 2px solid;
   border-color: purple;
 }
 .rarity4 {
-  border: 1px solid;
+  border: 2px solid;
   border-color: gold;
 }
 .rarity5 {
-  border: 1px solid;
+  border: 2px solid;
   border-color: pink;
 }
 
