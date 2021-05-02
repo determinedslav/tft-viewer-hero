@@ -70,14 +70,14 @@ const Match = () => {
                     <div className="col-lg-9">
                         <div className="bg-light border rounded-top">
                             <div className="text-muted p-2 mb-1">
-                                Match history - showing 10 most recent games
+                                Match history - showing most recent games
                             </div>
                             <ul className="list-group">
                                 {match.map((match, i) => {
                                     match.units.sort(dynamicSort("tier"));
                                     match.traits.sort(dynamicSort("style"));
                                     return <li key={i} className={"list-group-item border-left-0 border-right-0 border-top border-bottom rounded-0 placement"+match.placement}>
-                                        {match.queueId === 1100 ? <div className ="font-weight-bold mb-2 ml-1">Ranked Game</div> : <div className ="font-weight-bold mb-2 ml-1">Normal Game</div>}
+                                        {match.queueId === 1100 ? <div className ="font-weight-bold mb-2 ml-1">Ranked Game</div> : match.queueId === 1130 ? <div className ="font-weight-bold mb-2 ml-1">Hyper Roll</div> : <div className ="font-weight-bold mb-2 ml-1">Normal Game</div>}
                                         <div className="row">
                                             <div className="display-4 col-sm-1">
                                                 {match.placement}
