@@ -6,7 +6,7 @@ import '../assets/css/tiers.css';
 
 const Details = () => {
     const matchIndex = useSelector(state => state.matchIndex);
-    const stats = useSelector(state => state.stats[0]);
+    const stats = useSelector(state => state.stats);
     const player = useSelector(state => state.player);
     const match = useSelector(state => state.match[matchIndex]);
     const isLoading = useSelector(state => state.loading);
@@ -29,7 +29,7 @@ const Details = () => {
     return <div>
         {
         //No player have been found yet or found player does not have tft data
-        stats === undefined || stats.isSet === false ? 
+        stats.rank === undefined || stats.isSet === false ? 
         <LoadingSplash message="Select a player to view information"></LoadingSplash> : 
         //No match has been selected yet
         matchIndex === ' ' ? <LoadingSplash message="Select a match to view details"></LoadingSplash> : 

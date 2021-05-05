@@ -91,12 +91,12 @@ const Profile = () => {
                 name: responsePlayer.newPlayer.name, 
                 region: responsePlayer.newPlayer.region,
                 level: responsePlayer.newPlayer.level,
-                rank: responsePlayer.newStats[0].rank,
-                division: responsePlayer.newStats[0].division,
-                lp: responsePlayer.newStats[0].lp,
-                wins: responsePlayer.newStats[0].wins,
-                losses: responsePlayer.newStats[0].losses,
-                played: responsePlayer.newStats[0].played,
+                rank: responsePlayer.newstats.rank,
+                division: responsePlayer.newstats.division,
+                lp: responsePlayer.newstats.lp,
+                wins: responsePlayer.newstats.wins,
+                losses: responsePlayer.newstats.losses,
+                played: responsePlayer.newstats.played,
             }
             const response = await service.addAccount(loggedUser.id, account);
             if(response && response.hasOwnProperty('data')){

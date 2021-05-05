@@ -7,7 +7,7 @@ import {setMatchIndex} from '../redux/actions/matchIndex';
 import '../assets/css/tiers.css';
 
 const Match = () => {
-    const stats = useSelector(state => state.stats[0]);
+    const stats = useSelector(state => state.stats);
     const player = useSelector(state => state.player);
     const match = useSelector(state => state.match);
     const isLoading = useSelector(state => state.loading);
@@ -51,7 +51,7 @@ const Match = () => {
     return <div>
             {
             //No player have been found yet or found player does not have tft data
-            stats === undefined || stats.isSet === false ? <LoadingSplash message="Select a player to view information"></LoadingSplash> : 
+            stats.rank === undefined || stats.isSet === false ? <LoadingSplash message="Select a player to view information"></LoadingSplash> : 
             //Loading has been set to true
             isLoading ? <LoadingSplash message="Loading..."></LoadingSplash> :
             //Loading has been set to false
