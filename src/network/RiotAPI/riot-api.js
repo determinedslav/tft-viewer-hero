@@ -21,18 +21,22 @@ async function getPlayer(name, region, regionFull){
                 if (responseStats.data.length === 0) {
                     return "No TFT information available for this player";
                 } else {
-                    newStats = responseStats.data.map(item=>{
-                        return {
-                            rank: item.tier,
-                            division: item.rank,
-                            wins: item.wins,
-                            losses: item.losses,
-                            played: item.wins + item.losses,
-                            lp: item.leaguePoints,
+                    // eslint-disable-next-line
+                    responseStats.data.map(item=>{
+                        if (item.queueType === "RANKED_TFT"){
+                            newStats = {
+                                rank: item.tier,
+                                division: item.rank,
+                                wins: item.wins,
+                                losses: item.losses,
+                                played: item.wins + item.losses,
+                                lp: item.leaguePoints,
+                            }
                         }
                     });
                 }
             }
+            console.log(newStats);
             return {newPlayer, newStats};
         }
     } catch (error) {
