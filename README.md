@@ -10,8 +10,8 @@ Deployed at: https://tft-viewer.herokuapp.com/
 
 ### Notes:
 
-Example player to search: /n
-Username: determinedslav /n
-Region: EU West /n
+Example player to search: <br/>
+Username: determinedslav <br/>
+Region: EU West <br/>
 
 It might take Heroku a couple of minutes to wake up the app (Page showing Server not Found or Application Error, sometimes can take up to 30 minutes to wake up)
