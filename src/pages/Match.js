@@ -37,6 +37,8 @@ const Match = () => {
                 return "Ranked Game"
             case 1130:
                  return "Hyper Roll"
+            case 1150:
+                 return "Doube Up"
             default:
               return "Unknown";
           }
