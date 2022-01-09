@@ -54,7 +54,7 @@ const Details = () => {
                             Match Details
                         </div>
                         <div className="bg-white border p-4">
-                        {match.queueId === 1100 ? <div className ="font-weight-bold text-center mb-2 ml-1">Ranked Game</div> : match.queueId === 1130 ? <div className ="font-weight-bold text-center mb-2 ml-1">Hyper Roll</div> : <div className ="font-weight-bold text-center mb-2 ml-1">Normal Game</div>}
+                            <div className ="font-weight-bold mb-2 ml-1">{getQueueType(match.queueId)}</div>
                             <div className={"display-4 rounded p-1 text-center placement"+match.placement}>
                                 {match.placement}
                             </div>
