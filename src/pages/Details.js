@@ -25,6 +25,21 @@ const Details = () => {
           }
     };
 
+    const getQueueType = (value) => {
+        switch(value) {
+            case 1090:
+                return "Normal Game"
+            case 1100:
+                return "Ranked Game"
+            case 1130:
+                 return "Hyper Roll"
+            case 1150:
+                 return "Doube Up"
+            default:
+              return "Unknown";
+          }
+    };
+
     //Details page render
     return <div>
         {
