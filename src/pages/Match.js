@@ -1,7 +1,8 @@
 import React from 'react';
 import {useSelector, useDispatch} from "react-redux";
 import {useHistory} from "react-router-dom";
-import LoadingSplash from '../components/LoadingSplash'
+import LoadingSplash from '../components/LoadingSplash';
+import DynamicSort from '../components/js/DynamicSort';
 import PlayerCard from '../components/PlayerCard';
 import {setMatchIndex} from '../redux/actions/matchIndex';
 import '../assets/css/tiers.css';
@@ -50,18 +51,6 @@ const Match = () => {
         history.push('/details');
     }
 
-    const dynamicSort = property => {
-        var sortOrder = -1;
-        if(property[0] === "-") {
-            sortOrder = 1;
-            property = property.substr(1);
-        }
-        return function (a,b) {
-            var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
-            return result * sortOrder;
-        }
-    }
-
     //Match page render
     return <div>
             {
@@ -89,8 +78,8 @@ const Match = () => {
                             </div>
                             <ul className="list-group">
                                 {match.map((match, i) => {
-                                    match.units.sort(dynamicSort("tier"));
-                                    match.traits.sort(dynamicSort("style"));
+                                    match.units.sort(DynamicSort.sortMatches("tier"));
+                                    match.traits.sort(DynamicSort.sortMatches("style"));
                                     return <li key={i} className={"list-group-item border-left-0 border-right-0 border-top border-bottom rounded-0 placement"+match.placement}>
                                         <div className ="font-weight-bold mb-2 ml-1">{getQueueType(match.queueId)}</div>
                                         <div className="row">
