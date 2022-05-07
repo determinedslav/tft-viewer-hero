@@ -12,24 +12,24 @@
 /* Trait level Styles */
 /*old value #5F7F7F*/
 .traitTier0 {
-  background-color: #3F5F5F;
+  background-color: #bfdfdf;
 }
 /*old value #c06a00*/
 .traitTier1 {
-  background-color: #a04a00;
+  background-color: #802a00;
 }
 /*old value #9caab6*/
 .traitTier2 {
-  background-color: #bccad6;
+  background-color: #dceaf6;
 }
 /*old value #d4af37*/
 .traitTier3 {
-  background-color: #f4cf57;
+  background-color: #ffef77;
 }
 /*old value #cba9c5, #ca99c1 0%, #9fc7af 74%*/
 .traitTier4 {
-  background-color: #ebc9e5;
-  background-image: linear-gradient(315deg, #eab9e1 0%, #bfe7cf 74%);  
+  background-color: #fbe9f5;
+  background-image: linear-gradient(315deg, #fad9f1 0%, #dff7ef 74%);  
 }
 
 /* Champion rarity styles*/
