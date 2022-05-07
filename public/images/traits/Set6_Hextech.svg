@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="Hextech TFT icon.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="35.416667"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="M11.885 1L18.8961 8.29385L13.2641 14.1526V21.6851L12 23L10.7359 21.6851V14.3921L4.87393 8.29385L11.885 1ZM4.06899 10.4456L6.25298 12.5974C5.70136 15.0842 7.47871 16.8222 8.43696 17.3798V21.3263L6.25298 21.9237L5.79302 19.1737L3.1499 18.8149L4.29897 16.6632L2 15.2281L3.60903 13.0755L2 11.7605L4.06899 10.4456ZM19.931 10.4456L22 11.7605L20.391 13.0755L22 15.2281L19.701 16.6632L20.8501 18.8149L18.207 19.1737L17.747 21.9237L15.563 21.3263V17.3798C16.5213 16.8222 18.2986 15.0842 17.747 12.5974L19.931 10.4456ZM11.885 4.22808L8.20698 8.05438L11.885 11.8807L15.563 8.05438L11.885 4.22808ZM11.885 5.90262L13.954 8.05438L11.885 10.2062L9.81602 8.05438L11.885 5.90262Z"
+     fill="white"
+     id="path2"
+     style="fill:#bd9e59;fill-opacity:1" />
+</svg>
