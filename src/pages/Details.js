@@ -1,7 +1,8 @@
 import React from 'react';
 import {useSelector} from "react-redux";
-import LoadingSplash from '../components/LoadingSplash'
-import PlayerCard from '../components/PlayerCard'
+import LoadingSplash from '../components/LoadingSplash';
+import MatchDisplay from '../components/js/MatchDisplay';
+import PlayerCard from '../components/PlayerCard';
 import '../assets/css/tiers.css';
 
 const Details = () => {
@@ -22,21 +23,6 @@ const Details = () => {
                  return <div className="font-weight-bold text-center tier3">***</div>
             default:
               return 'Error';
-          }
-    };
-
-    const getQueueType = (value) => {
-        switch(value) {
-            case 1090:
-                return "Normal Game"
-            case 1100:
-                return "Ranked Game"
-            case 1130:
-                 return "Hyper Roll"
-            case 1150:
-                 return "Doube Up"
-            default:
-              return "Unknown";
           }
     };
 
@@ -69,7 +55,7 @@ const Details = () => {
                             Match Details
                         </div>
                         <div className="bg-white border p-4">
-                            <div className ="font-weight-bold mb-2 ml-1">{getQueueType(match.queueId)}</div>
+                            <div className ="font-weight-bold mb-2 ml-1">{MatchDisplay.getQueueType(match.queueId)}</div>
                             <div className={"display-4 rounded p-1 text-center placement"+match.placement}>
                                 {match.placement}
                             </div>

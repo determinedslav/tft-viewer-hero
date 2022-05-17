@@ -30,21 +30,6 @@ const Match = () => {
           }
     };
 
-    const getQueueType = (value) => {
-        switch(value) {
-            case 1090:
-                return "Normal Game"
-            case 1100:
-                return "Ranked Game"
-            case 1130:
-                 return "Hyper Roll"
-            case 1150:
-                 return "Doube Up"
-            default:
-              return "Unknown";
-          }
-    };
-
     //Changes the currently selected match index and redirects to the details page
     const redirectToDetails = (index) => {
         dispatch(setMatchIndex(index))
@@ -81,7 +66,7 @@ const Match = () => {
                                     match.units.sort(MatchDisplay.sortMatches("tier"));
                                     match.traits.sort(MatchDisplay.sortMatches("style"));
                                     return <li key={i} className={"list-group-item border-left-0 border-right-0 border-top border-bottom rounded-0 placement"+match.placement}>
-                                        <div className ="font-weight-bold mb-2 ml-1">{getQueueType(match.queueId)}</div>
+                                        <div className ="font-weight-bold mb-2 ml-1">{MatchDisplay.getQueueType(match.queueId)}</div>
                                         <div className="row">
                                             <div className="display-4 col-sm-1">
                                                 {match.placement}
