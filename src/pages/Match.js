@@ -16,20 +16,6 @@ const Match = () => {
     const dispatch = useDispatch();
     const history = useHistory();
 
-    //Checks the unit's tier and returns the coresponding star design
-    const getUnitTier = (value) => {
-        switch(value) {
-            case 1:
-                return <div className="font-weight-bold text-center tier1">*</div>
-            case 2:
-                return <div className="font-weight-bold text-center tier2">**</div>
-            case 3:
-                 return <div className="font-weight-bold text-center tier3">***</div>
-            default:
-              return 'Error';
-          }
-    };
-
     //Changes the currently selected match index and redirects to the details page
     const redirectToDetails = (index) => {
         dispatch(setMatchIndex(index))
@@ -76,7 +62,7 @@ const Match = () => {
                                                     {match.units.map((units, i) => {
                                                         return <div key={i} className="d-flex flex-row">
                                                         <div>
-                                                            {getUnitTier(units.tier)}
+                                                            <div className={"font-weight-bold text-center tier"+units.tier}>{[...Array(units.tier)].map(() => <span>*</span>)}</div>
                                                             <img className={"rounded rarity" + units.rarity} height="52" width="52" src= {"images/champions/" + units.character_id + ".png"} alt={units.character_id}/>
                                                             <div className="row ml-0">
                                                                 {units.items.map((item, i) => {
