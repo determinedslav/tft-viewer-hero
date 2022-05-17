@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {useSelector, useDispatch} from "react-redux";
 import { useHistory } from "react-router-dom";
 import LoadingSplash from '../components/LoadingSplash';
-import DynamicSort from '../components/js/DynamicSort';
+import MatchDisplay from '../components/js/MatchDisplay';
 import {setStats} from '../redux/actions/stats';
 import {setPlayer} from '../redux/actions/player';
 import {setLoading} from '../redux/actions/loading';
@@ -67,7 +67,7 @@ const Home = () => {
         setTimeout(()=>{
             if (matches.length !== 0) {
                 //Sorts all found matches by descending date before dispatching
-                matches.sort(DynamicSort.sortMatches("dateTime"));
+                matches.sort(MatchDisplay.sortMatches("dateTime"));
                 console.log(matches);
                 dispatch(setMatch(matches));
                 //Removes match index from potential previous player statistics viewed

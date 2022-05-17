@@ -1,7 +1,7 @@
 import React from 'react';
 import {useSelector, useDispatch} from "react-redux";
 import { useHistory } from "react-router-dom";
-import DynamicSort from '../components/js/DynamicSort';
+import MatchDisplay from './js/MatchDisplay';
 import {setStats} from '../redux/actions/stats';
 import {setPlayer} from '../redux/actions/player';
 import {setLoading} from '../redux/actions/loading';
@@ -71,7 +71,7 @@ const NavProfile = props => {
     const handleMatches = (matches) => {
         setTimeout(()=>{
             if (matches.length !== 0) {
-                matches.sort(DynamicSort.sortMatches("dateTime"));
+                matches.sort(MatchDisplay.sortMatches("dateTime"));
                 console.log(matches);
                 dispatch(setMatch(matches));
                 dispatch(setMatchIndex(' '));

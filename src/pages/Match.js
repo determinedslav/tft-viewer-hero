@@ -2,7 +2,7 @@ import React from 'react';
 import {useSelector, useDispatch} from "react-redux";
 import {useHistory} from "react-router-dom";
 import LoadingSplash from '../components/LoadingSplash';
-import DynamicSort from '../components/js/DynamicSort';
+import MatchDisplay from '../components/js/MatchDisplay';
 import PlayerCard from '../components/PlayerCard';
 import {setMatchIndex} from '../redux/actions/matchIndex';
 import '../assets/css/tiers.css';
@@ -78,8 +78,8 @@ const Match = () => {
                             </div>
                             <ul className="list-group">
                                 {match.map((match, i) => {
-                                    match.units.sort(DynamicSort.sortMatches("tier"));
-                                    match.traits.sort(DynamicSort.sortMatches("style"));
+                                    match.units.sort(MatchDisplay.sortMatches("tier"));
+                                    match.traits.sort(MatchDisplay.sortMatches("style"));
                                     return <li key={i} className={"list-group-item border-left-0 border-right-0 border-top border-bottom rounded-0 placement"+match.placement}>
                                         <div className ="font-weight-bold mb-2 ml-1">{getQueueType(match.queueId)}</div>
                                         <div className="row">
