@@ -2,7 +2,7 @@
   "name": "tft-viewer",
   "version": "1.0.1",
   "engines": {
-    "node": "16.x"
+    "node": "6.x"
   },
   "private": true,
   "dependencies": {
