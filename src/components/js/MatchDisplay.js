@@ -19,6 +19,7 @@ function getQueueType (value) {
         case 1130:
              return "Hyper Roll"
         case 1150:
+        case 1160:
              return "Doube Up"
         default:
           return "Unknown";

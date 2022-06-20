@@ -8,6 +8,9 @@
 .tier3 {
   color: #d4af37;
 }
+.tier4 {
+  color: #18e0e0;
+}
 
 /* Trait level Styles */
 /*old value #5F7F7F*/
@@ -33,29 +36,45 @@
 }
 
 /* Champion rarity styles*/
+/*1cost*/
 .rarity0 {
   border: 2px solid;
   border-color: gray;
 }
+/*2cost*/
 .rarity1 {
   border: 2px solid;
   border-color: green;
 }
+/*3cost*/
 .rarity2 {
   border: 2px solid;
   border-color: blue;
 }
+/*4cost*/
 .rarity3 {
   border: 2px solid;
   border-color: purple;
 }
+/*?cost*/
 .rarity4 {
+  border: 2px solid;
+  border-color: purple;
+}
+/*5cost*/
+.rarity5 {
   border: 2px solid;
   border-color: gold;
 }
-.rarity5 {
+/*specialcost*/
+.rarity6 {
   border: 2px solid;
-  border-color: pink;
+  border-color: gold;
+}
+/*trainer*/
+.rarity8 {
+  border: 2px solid;
+  border-color: black;
 }
 
 /* Game placement Styles*/
